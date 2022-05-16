@@ -277,7 +277,7 @@ public class Graph {
         System.out.println();
         System.out.println();
 
-        System.out.print(" DFS path: ");
+        System.out.print("DFS path: ");
         for (String s : path) {
             if (s.equals(path.get(path.size() - 1))) {
                 System.out.print(s);
@@ -358,7 +358,7 @@ public class Graph {
         System.out.println();
         System.out.println();
 
-        System.out.print(" A* path: ");
+        System.out.print("A* path: ");
         for (String s : path) {
             if (s.equals(path.get(path.size() - 1))) {
                 System.out.print(s);
@@ -437,7 +437,7 @@ public class Graph {
         System.out.println();
         System.out.println();
 
-        System.out.print(" A* path: ");
+        System.out.print("A* path: ");
         for (String s : path) {
             if (s.equals(path.get(path.size() - 1))) {
                 System.out.print(s);
@@ -524,7 +524,7 @@ public class Graph {
         System.out.println();
         System.out.println();
 
-        System.out.print(" Greedy path: ");
+        System.out.print("Greedy path: ");
         for (String s : path) {
             if (s.equals(path.get(path.size() - 1))) {
                 System.out.print(s);

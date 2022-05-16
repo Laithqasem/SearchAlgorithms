@@ -352,8 +352,6 @@ public class Graph {
         }
         Collections.reverse(path);
         System.out.println();
-        System.out.println();
-
         System.out.print("A* path: ");
         for (String s : path) {
             if (s.equals(path.get(path.size() - 1))) {
@@ -430,7 +428,6 @@ public class Graph {
         }
         Collections.reverse(path);
         System.out.println();
-        System.out.println();
 
         System.out.print("A* path: ");
         for (String s : path) {
@@ -480,7 +477,7 @@ public class Graph {
             visited.add(current.getCity());
         }
 
-        System.out.print("Greedy visited nodes: ");
+        System.out.println("Greedy visited nodes: ");
         for (String s : visited) {
             if (s.equals(visited.get(visited.size() - 1))) {
                 System.out.print(s);
@@ -516,9 +513,8 @@ public class Graph {
         }
         Collections.reverse(path);
         System.out.println();
-        System.out.println();
 
-        System.out.print("Greedy path: ");
+        System.out.println("Greedy path: ");
         for (String s : path) {
             if (s.equals(path.get(path.size() - 1))) {
                 System.out.print(s);

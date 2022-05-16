@@ -286,11 +286,7 @@ public class Graph {
                 System.out.print(s + " -> ");
             }
         }
-        System.out.println();
-        System.out.println();
 
-
-        System.out.println();
         System.out.println("Path Cost For Walking: " + pathCostForWalk);
         System.out.println("Path Cost For Car: " + pathCostForCar);
         System.out.println("Path Cost For Aerial: " + pathCostForAerial);
@@ -367,7 +363,6 @@ public class Graph {
                 System.out.print(s + " -> ");
             }
         }
-        System.out.println();
         System.out.println("Path Cost For Walking: " + pathCostForWalk);
         System.out.println("Path Cost For Car: " + pathCostForCar);
         System.out.println("Path Cost For Aerial: " + pathCostForAerial);
@@ -446,7 +441,6 @@ public class Graph {
                 System.out.print(s + " -> ");
             }
         }
-        System.out.println();
         System.out.println("Path Cost For Walking: " + pathCostForWalk);
         System.out.println("Path Cost For Car: " + pathCostForCar);
         System.out.println("Path Cost For Aerial: " + pathCostForAerial);
@@ -534,7 +528,6 @@ public class Graph {
             }
         }
 
-        System.out.println();
         System.out.println("Path Cost For Walking: " + pathCostForWalk);
         System.out.println("Path Cost For Car: " + pathCostForCar);
         System.out.println("Path Cost For Aerial: " + pathCostForAerial);

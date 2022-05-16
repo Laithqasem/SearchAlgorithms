@@ -5,8 +5,9 @@ import java.util.Comparator;
 public class Node {
     private String city;
 
-    private ArrayList<SubNode> connectedCities;
-    private ArrayList<SubNode> allCities;
+    private final ArrayList<SubNode> connectedCities;
+    private final ArrayList<SubNode> allCities;
+
     public Node() {
         connectedCities = new ArrayList<SubNode>();
         allCities = new ArrayList<SubNode>();
@@ -15,6 +16,7 @@ public class Node {
     public String getCity() {
         return city;
     }
+
     public void setCity(String city) {
         this.city = city;
     }
@@ -42,6 +44,7 @@ public class Node {
 
         return allCities;
     }
+
     public void printConnectedCities() {
         Collections.sort(connectedCities, new Comparator<SubNode>() {
             @Override
@@ -58,6 +61,7 @@ public class Node {
 
         }
     }
+
     public void printAllCities() {
         Collections.sort(allCities, new Comparator<SubNode>() {
             @Override
@@ -72,8 +76,9 @@ public class Node {
             System.out.println(node.getWalkDistance());
         }
     }
+
     public void addToConnectedCities(SubNode city) {
-        if(city.getCarDistance()!=0)
+        if (city.getCarDistance() != 0)
             this.connectedCities.add(city);
         this.allCities.add(city);
 
@@ -96,7 +101,7 @@ public class Node {
 
 
         for (SubNode node : allCities) {
-            if(node.getCity().equals(name))
+            if (node.getCity().equals(name))
                 return node;
         }
         return null;
@@ -111,7 +116,7 @@ public class Node {
         });
 
         for (SubNode node : connectedCities) {
-            if(node.getCity().equals(name))
+            if (node.getCity().equals(name))
                 return node;
         }
         return null;
